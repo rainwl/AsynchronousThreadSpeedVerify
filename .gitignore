@@ -8,3 +8,19 @@
 SensorDataServer/.idea/.idea.SensorDataServer/.idea/
 
 SensorDataServer/SensorDataServer/obj/
+
+DataHandler/Library/
+
+DataHandler/Logs/
+
+DataHandler/ProjectSettings/
+
+DataHandler/Temp/
+
+DataHandler/UserSettings/Layouts/default-2021.dwlt
+
+DataHandler/UserSettings/
+
+*.sln
+
+*.csproj
