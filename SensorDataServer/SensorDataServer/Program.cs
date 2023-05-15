@@ -6,16 +6,19 @@ namespace SensorDataServer;
 
 internal class SensorData
 {
-    private readonly Socket server;
-    private EndPoint _clientpoint;
+    private static Socket? server;
+    private static EndPoint? _clientpoint;
 
-    private SensorData()
+    static void Main()
     {
         server = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
         server.Bind(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9600));
         _clientpoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9700);
-
         var msg = "1,1,1";
-        server.SendTo(Encoding.UTF8.GetBytes(msg), _clientpoint);
+        while (true)
+        {
+            server.SendTo(Encoding.UTF8.GetBytes(msg), _clientpoint);
+            Console.WriteLine("Data Sending");
+        }
     }
 }

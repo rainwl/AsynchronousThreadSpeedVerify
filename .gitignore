@@ -24,3 +24,5 @@ DataHandler/UserSettings/
 *.sln
 
 *.csproj
+
+/SensorDataServer/SensorDataServer/bin
