@@ -26,3 +26,6 @@ DataHandler/UserSettings/
 *.csproj
 
 /SensorDataServer/SensorDataServer/bin
+DataHandler/.idea/.idea.DataHandler/.idea/
+
+DataHandler/obj/Debug/
